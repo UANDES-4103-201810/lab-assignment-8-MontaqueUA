@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :products
   end
   
-  get '/admin/:id', to: 'users#admin_home'
+  get '/admin/:id', to: 'users#admin_users'
   get '/admin/:id/users', to: 'users#admin_users'
   get '/admin/:id/products', to: 'users#admin_products'
   get '/admin/:id/users/:id/products', to: 'users#admin_user_product'

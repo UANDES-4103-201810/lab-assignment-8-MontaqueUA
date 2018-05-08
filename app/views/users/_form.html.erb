@@ -26,6 +26,11 @@
     <%= form.text_field :username, id: :user_username %>
   </div>
 
+  <div class="field">
+    <%= form.label :role %>
+    <%= form.check_box :role, id: :user_role%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
